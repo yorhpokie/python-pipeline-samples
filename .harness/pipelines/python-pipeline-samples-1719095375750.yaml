@@ -23,9 +23,8 @@ pipeline:
                   identifier: runlinter
                   name: run linter
                   spec:
-                    command: |-
-                      pip install flake8
-                      flake8 .
+                    shell: Sh
+                    command: pip install flake8
                   timeout: ""
                   type: Run
               - step:
@@ -51,9 +50,9 @@ pipeline:
                   timeout: ""
                   type: BuildAndPushDockerRegistry
           platform:
-            arch: Amd64
             os: Linux
+            arch: Amd64
           runtime:
-            spec: {}
             type: Cloud
+            spec: {}
         type: CI
