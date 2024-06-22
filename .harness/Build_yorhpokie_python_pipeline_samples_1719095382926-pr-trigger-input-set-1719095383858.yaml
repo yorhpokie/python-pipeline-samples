@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_yorhpokie_python_pipeline_samples_1719095382926-pr-trigger-input-set
+  identifier: Build_yorhpokie_python_pipeline_samples_1719095382926prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_yorhpokie_python_pipeline_samples_1719095382926
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
